@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Sekolah</title>
+    <link rel="stylesheet" href="prak33.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>SMK Negeri 1 Contoh</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Fasilitas</a></li>
+                    <li><a href="#">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h2>Selamat Datang di Website Resmi SMK Negeri 1 Contoh</h2>
+            <p>Website ini merupakan portal resmi untuk memberikan
+                informasi terkini mengenai kegiatan sekolah dan akademik.</p>
+        </div>
+    </section>
+    <section class="content">
+        <div class="container">
+            <h3>Informasi Terkini</h3>
+            <p>Kami selalu menyediakan informasi terbaru mengenai kegiatan
+                sekolah, pengumuman akademik, dan berita lainnya.</p>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 SMK Negeri 1 Contoh. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<section class="content">
+    <div class="container">
+        <div class="item">
+            <h4>Pengumuman 1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Quisque nisl eros.</p>
+        </div>
+        <div class="item">
+            <h4>Pengumuman 2</h4>
+            <p>Pellentesque habitant morbi tristique senectus et netus et
+                malesuada fames ac turpis egestas.</p>
+        </div>
+        <div class="item">
+            <h4>Pengumuman 3</h4>
+            <p>Donec sollicitudin molestie malesuada. Cras ultricies ligula
+                sed magna dictum porta.</p>
+        </div>
+    </div>
+</section>
+
+CSS
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #5383a3;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #085fa7;
+    color: #fdfafa;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/*Navigation Styles*/
+nav ul {
+    list-style: none;
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, transform 0.3s ease;
+    padding: 10px 15px;
+    background-color: #34495e;
+    /* Warna latar belakang menu */
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+/* Active Menu Item */
+nav ul li a.active {
+    background-color: #1abc9c;
+    /* Hijau untuk item menu aktif */
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url(assss1.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Content Section */
+.content {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.content h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #2C3E50;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.content p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #7f8c8d;
+}
+
+/* Content Grid Layout */
+.content .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.content .item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    animation: zoomIn 0.5s ease-in-out;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.content .item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.content .item h4 {
+    font-size: 22px;
+    color: #193cd4;
+    /* Warna biru tua */
+    font-family: 'Roboto', serif;
+}
+
+.content .item p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #2C3E50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: #1abc9c;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: white;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .content h3 {
+        font-size: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Animasi Fade In pada Header */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

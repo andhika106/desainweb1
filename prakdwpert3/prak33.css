@@ -1,0 +1,203 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #5383a3;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #085fa7;
+    color: #fdfafa;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/*Navigation Styles*/
+nav ul {
+    list-style: none;
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, transform 0.3s ease;
+    padding: 10px 15px;
+    background-color: #34495e;
+    /* Warna latar belakang menu */
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+/* Active Menu Item */
+nav ul li a.active {
+    background-color: #1abc9c;
+    /* Hijau untuk item menu aktif */
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url(assss1.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Content Section */
+.content {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.content h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #2C3E50;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.content p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #7f8c8d;
+}
+
+/* Content Grid Layout */
+.content .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.content .item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    animation: zoomIn 0.5s ease-in-out;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.content .item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.content .item h4 {
+    font-size: 22px;
+    color: #193cd4;
+    /* Warna biru tua */
+    font-family: 'Roboto', serif;
+}
+
+.content .item p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #2C3E50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: #1abc9c;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: white;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .content h3 {
+        font-size: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Animasi Fade In pada Header */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
